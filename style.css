@@ -1,0 +1,80 @@
+    /*Types of css selectors*/
+/*universal selector-used to apply rules on all elements in the webpage*/
+*{
+   margin: 0; 
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+ }   
+
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-style: italic;
+    }
+
+button{
+    padding: 8px;
+    background-color: blue;
+    color: #fff;;
+    margin: 4px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*element selector*/
+body{
+   background-color: black;
+   color: azure;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif; color:darkgoldenrod;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:chartreuse;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
+
+img {width: 300px;
+    height: 300px;
+border-radius: 8px;
+}
+/*class selector*/
+.container{
+border: 1px solid;color:red; 
+width: 500px;
+height: 200px;
+background-color:azure;
+}
+
+.logo-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:darkgoldenrod;
+    font-size: large;
+    font-display: block;
+}
+/*removing underline from anchor tags /links*/
+a {
+    text-decoration: none;
+}
+/*to style the  sector id= use #name of id */
+#portfolio{
+    border: 4px dotted;color: greenyellow;
+}
+/*Attribute selector*/
+a[href] {color: #fff;}
+
+/*descendant selector*/
+div h4{
+    color: red;
+}
+
+/*child selector*/
+div> p{
+    color:pink;
+}
