@@ -24,7 +24,7 @@ button{
 
 /*element selector*/
 body{
-   background-color: black;
+   background-color: gray;
    color: azure;
 }
 
@@ -58,14 +58,21 @@ background-color:azure;
     font-size: large;
     font-display: block;
 }
+
 /*removing underline from anchor tags /links*/
 a {
     text-decoration: none;
 }
+
 /*to style the  sector id= use #name of id */
 #portfolio{
     border: 4px dotted;color: greenyellow;
 }
+
+#contact{
+border: 2px solid red
+}
+
 /*Attribute selector*/
 a[href] {color: #fff;}
 
@@ -77,4 +84,47 @@ div h4{
 /*child selector*/
 div> p{
     color:pink;
+}
+
+div ul li{
+    color: blueviolet;
+}
+/*Adjacent sibling selector*/
+
+h4 + nav{
+background-color:green;
+color:white;
+
+} 
+ /*general sibling selector*/
+ h3 ~ p {
+    color: yellow;
+ }
+ /*Group selectors*/
+ h2,h3,h4{
+color: indigo;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ /*interactive state (pseudo class selectors)- getting a responsive interaction*/
+ .cta-btn:hover{
+    background-color: red;
+color: #fff;
+ }
+
+ .cta-btn:active{
+    background-color: yellow;
+ }
+
+ input:focus{
+    border-color: red;
+ }
+ /*adding content of text*/
+a::before{
+    content: "Navigation Links : ";
+    color: black;
+}
+p::after{
+    content:"additionl";
+    color: red;
 }
