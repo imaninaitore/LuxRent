@@ -58,7 +58,6 @@ background-color:azure;
     font-size: large;
     font-display: block;
 }
-
 /*removing underline from anchor tags /links*/
 a {
     text-decoration: none;
@@ -128,3 +127,4 @@ p::after{
     content:"additionl";
     color: red;
 }
+
